@@ -1,0 +1,51 @@
+<html>
+  
+  <body>
+    <head>
+        
+      
+        
+     <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script>
+           
+            
+            know = {
+                "hello"   :"🇭​🇴​🇱​🇦​",
+                "how are you?" : "good",
+                "ok"         : ":)",
+                "trol"       : "jaja",
+            };
+            function talk() {
+                var user = document.getElementById("userBox").value;
+                document.getElementById("userBox").value = "";
+                document.getElementById("chat").innerHTML += user+"<br><br><br>";
+                
+                
+                if (user in know) {
+                    document.getElementById("chat").innerHTML += know[user]+"<br>";
+                } 
+                
+                else {
+                    document.getElementById("chat2").innerHTML += "no te entiendo...<br><br>"
+                    ;
+                }
+            } 
+        </script>
+    </head>
+    <body>
+        <h3 style="color:#1125e1"
+             align="center">🇧​🇴​🇹​</h3>
+             
+        
+       <p class="chat" id="chat2" <span class="chat"></span></p>
+       
+           <p style="color:#3f0df4cb"
+            id="chat"></p>
+            
+        
+        <input
+        class="redondeadonorelieve" 
+        
+        id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+    </body>
+</html>
